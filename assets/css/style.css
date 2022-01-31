@@ -3,6 +3,18 @@
     src: url(../font/GWIBBLE_.woff) format("woff");
     src: url(../font/GWIBBLE_.woff2) format("woff2");
 }
-h1 {
+body {
     font-family: GWIBBLE, serif;
+}
+/*Game content styled as a grid  */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px;
+    perspective: 400px;
+}
+.card {
+    position: relative;
+    height: 152px;
+    width: 142px;
 }
