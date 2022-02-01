@@ -3,15 +3,41 @@
     src: url(../font/GWIBBLE_.woff) format("woff");
     src: url(../font/GWIBBLE_.woff2) format("woff2");
 }
+
 body {
     font-family: GWIBBLE, serif;
+    background: linear-gradient(to right, rgb(25, 106, 153), rgb(167, 94, 51));
+}
+/*header and game info*/
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 7em;
+    background: linear-gradient(to right, rgb(161, 83, 38),rgb(0, 71, 112));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info-container {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+.game-info {
+    font-size: 4em;
+}
+.left {
+    color: rgb(88, 37, 8);
+}
+.right {
+    color:rgb(12, 79, 117);
 }
 /*Game content styled as a grid  */
 .game-container {
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin: 20px;
-    perspective: 400px;
+    perspective: 1000px;
 }
 .card {
     position: relative;
