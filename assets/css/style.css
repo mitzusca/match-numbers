@@ -8,7 +8,7 @@ body {
     font-family: GWIBBLE, serif;
     background: linear-gradient(to right, rgb(25, 106, 153), rgb(167, 94, 51));
 }
-/*header and game info*/
+/*Header and game info*/
 h1 {
     font-weight: bolder;
     text-align: center;
@@ -40,7 +40,7 @@ h1 {
     justify-content: center;  
     grid-gap: 10px;
 }
-/*Card games style*/
+/*Game card style*/
 .card {
     position: relative;
     height: 152px;
@@ -59,4 +59,38 @@ h1 {
     border-style: solid;
     overflow: hidden;
 }
-
+/*It show card value when you hover over it*/
+.card:hover .card-value {
+    z-index: 1;
+}
+/*Text that appear when you need to start the game, when game is over or when you finnished game*/
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color:rgb(100, 161, 214)
+}
+.overlay.visible{
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+    flex-direction: column;
+}
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0,0,0,0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0,0,0,0.8);
+        font-size: 10em;
+    }   
+}
+.text-smaller {
+    font-size: .4em;
+}
