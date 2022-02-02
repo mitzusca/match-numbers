@@ -60,8 +60,8 @@ h1 {
     border-style: solid;
     overflow: hidden;
 }
-/*It show card value when you hover over it*/
-.card:hover .card-value {
+/*It show card value when you click on it*/
+.card.visible .card-value {
     z-index: 1;
 }
 /*Text that appear when you need to start the game, when game is over or when you finnished game*/
