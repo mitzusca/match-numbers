@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Match Numbers</title>
 </head>
 <body>
+    <!--Here is the name of game-->
     <h1>Match Numbers</h1>
+    <!--Here I placed all three moments of the game-->
     <div class="overlay visible">
         Click to start!
     </div>
@@ -20,7 +23,9 @@
         Well Done !
         <span class="text-smaller">Restart</span>
     </div>
+    <!--This part contain the whole game-->
     <div class="game-container">
+    <!-- Here is placed timer and number of clicks-->
         <div class="info-container">
             <div class="game-info left">
                 Time: <span id="time-remaining">100</span>
@@ -29,168 +34,169 @@
                 Clicks: <span id="clicks">0</span>
             </div>
         </div>
+    <!--Here are placed all the cards-->
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/1.png" alt="number 1">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/2.png" alt="number 2">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value"  src="assets/images/3.png" alt="number 3">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value"  src="assets/images/4.png" alt="number 4">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value"  src="assets/images/5.png" alt="number 5">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img  class="card-value" src="assets/images/6.png" alt="number 6">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/7.png" alt="number 7">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/8.png" alt="number 8">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/9.png" alt="number 9">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/10.png" alt="number 10">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/1.png" alt="number 1">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/2.png" alt="number 2">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/3.png" alt="number 3">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/4.png" alt="number 4">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/5.png" alt="number 5">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/6.png" alt="number 6">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/7.png" alt="number 7">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/8.png" alt="number 8">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/9.png" alt="number 9">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
         <div class="card">
-            <div class="card-style">
+            <div class="front face">
                 <img class="card-value" src="assets/images/10.png" alt="number 10">
             </div>
-            <div class="card-style">
+            <div class="back face">
                 <img class="backside" src="assets/images/backside.png" alt="question and exclamation signs">
             </div>
         </div>
     </div>
-
+<!--JavaScript File-->
     <script src="assets/java/script.js" async></script>
 </body>
 </html>

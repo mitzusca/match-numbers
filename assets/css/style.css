@@ -3,9 +3,11 @@
     src: url(../font/GWIBBLE_.woff) format("woff");
     src: url(../font/GWIBBLE_.woff2) format("woff2");
 }
+/*Here I was trying to fix background color of page when resized*/
 html {
     min-width: 55vh;
 }
+/*Background color of the page*/
 body {
     font-family: GWIBBLE, serif;
     background: linear-gradient(to right, rgb(25, 106, 153), rgb(167, 94, 51));
@@ -47,7 +49,7 @@ h1 {
     height: 152px;
     width: 142px;
 }
-.card-style {
+.face {
     position: absolute;
     width: 100%;
     height: 96%;
@@ -59,11 +61,16 @@ h1 {
     border-width: 5px;
     border-style: solid;
     overflow: hidden;
-}
-/*It show card value when you click on it*/
-.card.visible .card-value {
-    z-index: 1;
-}
+    backface-visibility: hidden;
+  }
+  /*It show card value when you click on it*/
+  .card.visible .back {
+    transform: rotateY(-180deg);
+  }
+  
+  .card.visible .front {
+    transform: rotateY(0)
+  }
 /*Text that appear when you need to start the game, when game is over or when you finnished game*/
 .overlay{
     display: none;
