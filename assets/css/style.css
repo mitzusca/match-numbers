@@ -1,27 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:wght@300&display=swap');
 @font-face {
-    font-family: "GWIBBLE";
-    src: url(../font/GWIBBLE_.woff) format("woff");
-    src: url(../font/GWIBBLE_.woff2) format("woff2");
-}
+    font-family: "Finger Paint", cursive;
+    src: url("../font/FingerPaint-Regular.ttf") format("ttf")
+  }
 /*Here I was trying to fix background color of page when resized*/
 html {
     min-width: 55vh;
 }
 /*Background color of the page*/
 body {
-    font-family: GWIBBLE, serif;
-    background: linear-gradient(to right, rgb(25, 106, 153), rgb(167, 94, 51));
+    font-family: 'Finger Paint', cursive;
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 129, 167, 0.5) 0%,rgba(0, 175, 185, 0.5),rgba(253, 252, 220, 0.5), rgba(254, 217, 183, 0.5),rgba(240, 113, 103, 0.5)  100%);
+    min-height: 100vh;
 }
 /*Header and game info*/
 h1 {
-    font-weight: bolder;
+    font-size: 5em;
+    color: red;
+    animation: colors 25s infinite;
     text-align: center;
-    font-size: 7em;
-    background: linear-gradient(to right, rgb(161, 83, 38),rgb(0, 71, 112));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
+@keyframes colors {
+    0% {color: rgb(124, 55, 55);}
+    10% {color: rgb(57, 57, 145);}
+    20% {color: rgb(51, 119, 48);}
+    30% {color: rgb(48, 109, 84);}
+    40% {color: rgb(115, 134, 45);}
+    50% {color: rgb(67, 48, 121);}
+    60% {color: rgb(83, 83, 153);}
+    70% {color: rgb(66, 141, 163);}
+    80% {color: rgb(60, 60, 126);}
+    90% {color: rgb(170, 134, 66);}
+    100% {color: rgb(51, 122, 116);}    
+  }
 .info-container {
     grid-column: 1/-1;
     display: flex;
